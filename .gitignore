@@ -23,4 +23,5 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.xdv
 thesis.pdf
