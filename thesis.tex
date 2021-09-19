@@ -35,6 +35,8 @@
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
 
+\listoftodos
+
 \tableofcontents % Prints the main table of contents
 
 \listoffigures % Prints the list of figures
@@ -70,12 +72,41 @@
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 
-% Include the chapters of the thesis as separate files from the chapters folder
-% Uncomment the lines as you write the chapters
+\input{chapters/introduction}
+
+% Chapter candidate structure
+
+% Computational Fluid Dynamics
+
+% what is CFD, applications, the NS equations, low-fidelity tools (panel methods), turbulence models, solver types (compressible, pressure-coupling), LBM
+
+% The finite volume method
+
+% motivation (discontinuity), solution representation, meshes, fluxes, space integration, time stepping, stopping criteria, extension to higher order
+
+% Solving inviscid compressible CFD problems with FVM
+
+% geometries and meshing, flux functions (flux vector splitting schemes, AUFS, etc.), mesh adaptation and shock capturing, metrics (CL CD), post processing and visualization
+
+% GPGPU & Julia 
+
+% gpu arthitecture, manufacturers, C/C++ programming frameworks (CUDA, HIP, OpenCL, SYCL, Vulkan), 
+% julia programming model, juliaGPU (cuda, etc.), interactivity with Pluto, code reuse and ecosystem
+
+% The Shockwave.jl package
+
+% walkthrough of the test cases (advection, diamond airfoil, airfoil, supersonic step)
+
+% Validation & Performance Results
+
+% validation strategy, performance and speedup across different architectures
+
+% Conclusions and future work
+
+% what's missing (DG), diffusion, mesh adaptation
 
 \input{chapters/chapter_template}
 
-\cite{*}
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
