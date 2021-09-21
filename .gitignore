@@ -1,3 +1,4 @@
+**/.DS_Store
 *.aux
 *.glo
 *.idx
@@ -24,4 +25,5 @@
 *.fls
 *.fdb_latexmk
 *.xdv
+*.tdo
 thesis.pdf
