@@ -73,39 +73,35 @@
 
 
 \input{chapters/introduction}
+\input{chapters/theory}
 
-% Chapter candidate structure
+%--------------Solving PDEs with Julia------------------
 
-% Computational Fluid Dynamics
+% julia programming model, juliaGPU (CUDA, etc.), interactivity with Pluto, code reuse and ecosystem
 
-% what is CFD, applications, the NS equations, low-fidelity tools (panel methods), turbulence models, solver types (compressible, pressure-coupling), LBM
+%--------------Finding the right abstraction (The Shockwave.jl package)------------
 
-% The finite volume method
-
-% motivation (discontinuity), solution representation, meshes, fluxes, space integration, time stepping, stopping criteria, extension to higher order
-
-% Solving inviscid compressible CFD problems with FVM
-
-% geometries and meshing, flux functions (flux vector splitting schemes, AUFS, etc.), mesh adaptation and shock capturing, metrics (CL CD), post processing and visualization
-
-% GPGPU & Julia 
-
-% gpu arthitecture, manufacturers, C/C++ programming frameworks (CUDA, HIP, OpenCL, SYCL, Vulkan), 
-% julia programming model, juliaGPU (cuda, etc.), interactivity with Pluto, code reuse and ecosystem
+% Previous work - Look at other Julia packages
+% Mention Liszt
+% Trixi.jl (Great but no GPU acceleration, focuses on AMR)
 
 % The Shockwave.jl package
-
 % walkthrough of the test cases (advection, diamond airfoil, airfoil, supersonic step)
 
-% Validation & Performance Results
+% GPU acceleration
+% The JuliaGPU programming primitives
+% Necessary changes for Shockwave.jl
 
+%--------------Results-------------------------------------------------------------
+
+% Validation & Performance Results
 % validation strategy, performance and speedup across different architectures
 
 % Conclusions and future work
 
 % what's missing (DG), diffusion, mesh adaptation
 
-\input{chapters/chapter_template}
+%---------Appendix (Test case code + Gmsh code)-------------------------
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
