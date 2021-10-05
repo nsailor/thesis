@@ -25,7 +25,7 @@
 
 \usepackage[hidelinks]{hyperref}
 
-\usepackage{listings} % show code
+\usepackage[theme=default,charsperline=100]{jlcode}
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{caption}
@@ -40,10 +40,15 @@
 
 
 % Γραμματοσειρά
-% \setromanfont{Source Serif Pro}
-% \setsansfont{Source Sans Pro}
-\setmonofont{Linux Biolinum}
-\setmainfont{Linux Libertine}
+\setmainfont{LinLibertine}[
+  Extension = .ttf,
+  Path = ./fonts/,
+  UprightFont = *_Rah,
+  BoldFont = *_RZah,
+  ItalicFont = *_RIah,
+  BoldItalicFont = *_RZIah,
+  ]
+ 
 
 % Χρήσιμο πακέτο για εισαγωγή εικόνων jpg/png ή άλλων εγγράφων pdf.
 \usepackage{graphicx}
